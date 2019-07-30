@@ -2,14 +2,12 @@
 var quotes = [
  {quote: "Love all, trust a few, do wrong to none.",
   source: "William Shakespeare",
-  citation: "All's Well That Ends Well",
   year: "1602"
 },
 
 { quote: "It takes a great deal of bravery to stand up to our enemies, but just as much to stand up to our friends.",
   source: "J.K. Rowling",
-  citation:"Harry Potter and the Sorcerer's Stone",
-  year: "1997"
+  citation:"Harry Potter and the Sorcerer's Stone"
 },
  
 
@@ -52,10 +50,10 @@ function printQuote(){
   var webpage = '';
   webpage += '<p class="quote">' + ranQuote.quote + '</p>';
   webpage += '<p class="source">' + ranQuote.source
-   if ('citation'){
+   if (ranQuote.citation){
    webpage += '<span class="citation">' + ranQuote.citation + '</span>';
 }
-if('year'){
+if(ranQuote.year){
   webpage += '<span class="year">' + ranQuote.year + '</span>';
 }
 webpage += '</p>';
